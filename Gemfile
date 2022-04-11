@@ -16,6 +16,9 @@ gem 'capistrano-rails', '~> 1.4'
 gem 'capistrano-passenger', '~> 0.2.0'
 gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 
+# datadog
+gem 'ddtrace', require: 'ddtrace/auto_instrument'
+
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
