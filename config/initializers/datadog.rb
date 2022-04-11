@@ -4,5 +4,4 @@ Datadog.configure do |c|
   c.env = 'production'
   c.service = "#{app}-#{Rails.env}"
   c.use :rails, service_name: "rails_#{app}_#{Rails.env}", log_injection: true
-  c.sampling.default_rate = 1.0
 end
