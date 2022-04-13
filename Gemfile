@@ -19,6 +19,12 @@ gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 # datadog
 gem 'ddtrace', require: 'ddtrace/auto_instrument'
 
+# sidekiq
+gem 'sidekiq'
+
+# redis
+gem 'redis'
+
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
