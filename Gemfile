@@ -25,6 +25,9 @@ gem 'sidekiq'
 # redis
 gem 'redis'
 
+# google cloud pubsub
+gem 'google-cloud-pubsub'
+
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
