@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'google/cloud/pubsub'
 
 class Pubsub
@@ -10,6 +12,6 @@ class Pubsub
 
   def publish_message(message)
     @pubsub.topic(@topic_demo).publish(message.to_json)
-    Rails.logger.info('================Message published===============')  
+    Rails.logger.info('================Message published===============')
   end
 end
