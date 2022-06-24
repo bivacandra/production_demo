@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'pubsub'
+# require 'pubsub'
 class PostsController < ApplicationController
   before_action :set_post, only: %i[show edit update destroy]
 

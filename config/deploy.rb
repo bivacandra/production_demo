@@ -4,7 +4,7 @@
 lock '~> 3.17.0'
 
 set :application, 'production_demo'
-set :repo_url, 'git@github.com:bivacandra/production_demo.git'
+set :repo_url, 'https://github.com/bivacandra/production_demo.git'
 
 # Deploy to the user's home directory
 set :deploy_to, "/home/deploy/#{fetch :application}"
