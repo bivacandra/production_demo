@@ -32,9 +32,9 @@ gem 'google-cloud-pubsub'
 
 gem 'bootsnap', '>= 1.4.2', require: false
 
-gem 'dotenv-rails'
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 
   # unit test
