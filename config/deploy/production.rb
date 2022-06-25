@@ -56,6 +56,6 @@
 #     # password: "please use keys"
 #   }
 
-server 'ec2-54-255-160-15.ap-southeast-1.compute.amazonaws.com',
+server 'ec2-18-141-188-207.ap-southeast-1.compute.amazonaws.com',
        user: 'deploy',
        roles: %w[web app db]

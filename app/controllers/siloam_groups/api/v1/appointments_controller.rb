@@ -8,7 +8,9 @@ module SiloamGroups
 
         def update_payment
           response_json = {
-            status: 'OK'
+            status: 'OK',
+            message: 'Success - Update Payment Appointment',
+            data: {}
           }
           render json: response_json
         end
