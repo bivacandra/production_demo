@@ -32,9 +32,10 @@ gem 'google-cloud-pubsub'
 
 gem 'bootsnap', '>= 1.4.2', require: false
 
+gem 'dotenv-rails'
+
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'dotenv-rails'
 
   # unit test
   gem 'factory_bot_rails'
@@ -44,6 +45,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'capistrano-sidekiq'
   gem 'listen', '~> 3.2'
   gem 'pry'
   gem 'spring'

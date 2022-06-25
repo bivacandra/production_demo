@@ -5,7 +5,7 @@
 
 # pubsub = Google::Cloud::PubSub.new(
 #   project_id: 'rugged-airway-346710',
-#   credentials: '/home/alo-bivachandralutfi/practices/capistrano/credentials.json'
+#   credentials: '/home/alo-bivachandralutfi/practices/capistrano/pubsub_account.json'
 # )
 
 # # Retrieve a subscription

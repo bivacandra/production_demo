@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'pubsub'
-
 module SiloamGroups
   module Api
     module V1
@@ -14,8 +12,8 @@ module SiloamGroups
             message: 'Success - Update Payment Appointment',
             data: {}
           }
+          AppointmentService.send_notif_pubsub(response_json)
 
-          Pubsub.new.publish_message(response_json)
           render json: response_json
         end
       end

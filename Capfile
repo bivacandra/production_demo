@@ -10,6 +10,10 @@ require 'capistrano/rails'
 require 'capistrano/passenger'
 require 'capistrano/rbenv'
 
+# Include sidekiq
+require 'capistrano/sidekiq'
+require 'capistrano/sidekiq/monit'
+
 set :rbenv_type, :user
 set :rbenv_ruby, '2.7.2'
 
