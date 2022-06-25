@@ -13,6 +13,11 @@ class Pubsub
 
   def publish_message(message)
     Rails.logger.info("================Message published=============== #{message.inspect}")
-    @pubsub.topic(@topic_demo).publish(message.to_json)
+
+    begin
+      @pubsub.topic(@topic_demo).publish(message.to_json)
+    rescue => e
+      Rails.logger.error("================Pubsub error=============== #{e}")
+    end
   end
 end
