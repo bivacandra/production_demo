@@ -2,7 +2,7 @@
 
 module SiloamGroups
   module Api
-    module V1
+    module V2
       class AppointmentsController < ApplicationController
         skip_before_action :verify_authenticity_token
 
@@ -12,7 +12,7 @@ module SiloamGroups
             message: 'Success - Update Payment Appointment',
             data: {}
           }
-          AppointmentService.send_notif_pubsub(response_json)
+          # AppointmentService.send_notif_pubsub(response_json)
 
           render json: response_json
         end

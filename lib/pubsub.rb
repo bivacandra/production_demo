@@ -16,7 +16,7 @@ class Pubsub
 
     begin
       @pubsub.topic(@topic_demo).publish(message.to_json)
-    rescue => e
+    rescue StandardError => e
       Rails.logger.error("================Pubsub error=============== #{e}")
     end
   end
